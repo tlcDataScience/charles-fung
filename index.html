@@ -1,47 +1,125 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Learn with PygameKids</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-.center {
-  margin: auto;
-  width: 60%;
-  border: 3px solid #73AD21;
-  padding: 10px;
-}
-</style>
-  </head>
-  <body>
-    <header>
-      <h1>Coding for Kids</h1>
-      <nav>
-        <ul>
-          <li><a href="#what-is-coding">What is Coding?</a></li>
-          <li><a href="#why-learn-coding">Why Learn Coding?</a></li>
-          <li><a href="#getting-started">Getting Started</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="what-is-coding">
-        <h2>What is Pygame?</h2>
-        <p>Pygame is a popular Python module used for developing 2D video games and multimedia applications. It provides a powerful set of tools and libraries for creating games, including support for graphics, sound, input handling, and event handling.</p>
-      </section>
-      <section id="why-learn-coding">
-        <h2>Sample Projects</h2>
+    <head>
+        <title>Charles Fung</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+             /* Basic styling for the card */
+            .card {
+                width: 60%;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                overflow: hidden;
+                margin: auto;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Styling for the card header */
+            .card-header {
+                background-color: #f1f1f1;
+                padding: 10px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            /* Styling for the card content */
+            .card-content {
+                padding: 15px;
+            }
             
-            <div class="center">
-                <h1> ColorPicker</h1>
-                <iframe src="https://replit.com/@tlcDataScience/ColorPickerV1?embed=true" width="100%" height="500"></iframe></div>
-            <div class="center">
-                <h1> SpeedTyping</h1><iframe src="https://replit.com/@tlcDataScience/SpeedTyping?embed=true" width="100%" height="500"></iframe></div>
-            <div class="center">
-                <h1> LineEstimation</h1><iframe src="https://replit.com/@tlcDataScience/LineEstimation?embed=true" width="100%" height="500"></iframe></div>
-            <div class="center">
-                <h1> ColorMatch</h1><iframe src="https://replit.com/@tlcDataScience/ColorMatch?embed=true" width="100%" height="500"></iframe></div>
-             <div class="center">
-                <h1> TEST</h1><iframe src="https://replit.com/@his91/Miner-haven?embed=true" width="100%" height="500"></iframe></div>
-            
-            
+            /* Code */
+            pre {
+                background-color: #f4f4f4;
+                padding: 10px;
+                border-radius: 5px;
+                overflow-x: auto;
+                white-space: pre-wrap;
+            }
+
+            code {
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Charles Fung</h1>
+        </header>
+    
+        <main>
+            <section id="Myself">
+                <h2>Bio</h2>
+                <p>Hey there! I'm diving into the world of Python programming, and I couldn't be more excited! As a student eager to learn and explore the realm of coding, I've chosen Python as my starting point. It's known for its simplicity, readability, and versatility, making it a fantastic language for someone like me who's just beginning this journey.</p>
+            </section>
+
+            <section id="Projects Done">
+
+            <h2>Projects Done</h2>
+
+            <div class="card">
+                <div class="card-header">Project 1 - Miner-haven</div>
+                <div class="card-content"><p>Write Up</p></div>
+                <div class="card-content"><iframe src="https://replit.com/@his91/Miner-haven?embed=true" width="100%" height="500"></iframe></div>
+            </div>
+            <br/>
+
+            <div class="card">
+                <div class="card-header">Project 2 - Dice Stats</div>
+                <div class="card-content"><p>Write Up</p></div>
+                <div class="card-content"><iframe src="https://replit.com/@his91/DiceStats?embed=true" width="100%" height="500"></iframe></div>
+            </div>
+            <br/>
+
+            <div class="card">
+                <div class="card-header">Project 3 - TicTacToe</div>
+                <div class="card-content"><p>Write Up</p></div>
+                <div class="card-content"><iframe src="https://replit.com/@his91/tic-tac-toe?embed=true" width="100%" height="500"></iframe></div>
+            </div>
+            <br/>
+
+            <div class="card">
+                <div class="card-header">
+                    Project 4
+                </div>
+                <div class="card-content">Commentary / Analysis: We used string slicing and the datetime library to convert strings containing dates into datetime variables. Then combined 2 data sets temperature and rainfall into a single dataframe.</div>
+                <div class="card-content">
+                    <pre> <code>
+df = df.rename(columns={'month': 'rawdate'})
+datetext = df['rawdate']
+date = []
+year = []
+month = []
+
+# Converting dates in string format to datetime format and seperating out month and year data  using string slicing and loops
+for i in datetext:
+    date.append(datetime.datetime(int(i[0:4]),int(i[5:7]),calendar.monthrange(int(i[0:4]), int(i[5:7]))[1]))
+    year.append(int(i[0:4]))
+    month.append(int(i[5:7]))
+
+# Inserting datetime, month and year columns back into the pandas dataframe
+df.insert(0,'month',month)
+df.insert(0,'year',year)
+df.insert(0,'date',date)
+
+# Converting temperature from string to numeric data type
+df['mean_temp'] = pd.to_numeric(df['mean_temp'])
+
+# adding the rainfall data into the pandas dataframe
+dfrain = dfrain.rename(columns={'month': 'rawdate'})
+df.insert(3,'rain',dfrain['total_rainfall'])
+
+# Converting rainfall data from string to numeric data type
+df['rain'] = pd.to_numeric(df['rain'])
+                             </code></pre>
+                </div>
+                <div class="card-content">
+                    <p>Image</p>
+                </div>
+                <div class="card-content">
+                    <p>Dataset</p>
+                </div>
+            </div>
+
+        </main>
+    </body>
