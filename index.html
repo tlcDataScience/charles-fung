@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Charles Fung</title>
+        <title>Charles Fung Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
              /* Basic styling for the card */
             .card {
-                width: 60%;
+                width: 75%;
                 border: 1px solid #ccc;
                 border-radius: 8px;
                 overflow: hidden;
                 margin: auto;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                box-shadow:10px 10px 30px -20px;
+                /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+                
             }
 
             /* Styling for the card header */
             .card-header {
-                background-color: #f1f1f1;
+                background-color: #0b390b; /*#f1f1f1;*/
+                color: #ffffff;
                 padding: 10px;
                 text-align: center;
                 font-weight: bold;
+                font-size: 28px;
             }
 
             /* Styling for the card content */
             .card-content {
-                padding: 15px;
+                padding: 30px;
             }
             
             /* Code */
@@ -40,6 +44,21 @@
             code {
                 font-size: 14px;
             }
+
+            /* Image */
+            img {
+                width: 50%;
+                margin: auto;
+            }
+
+            .center-wrapper {
+                text-align: center;
+            }
+
+            .center-wrapper img {
+                display: block;
+                margin: auto;
+            }
         </style>
     </head>
     <body>
@@ -49,77 +68,281 @@
     
         <main>
             <section id="Myself">
-                <h2>Bio</h2>
-                <p>Hey there! I'm diving into the world of Python programming, and I couldn't be more excited! As a student eager to learn and explore the realm of coding, I've chosen Python as my starting point. It's known for its simplicity, readability, and versatility, making it a fantastic language for someone like me who's just beginning this journey.</p>
+                <h1>Bio</h1>
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-content">
+                        <div class="center-wrapper"><img src="" alt="Description of the image"></div>
+                        <p>Hey there! I'm diving into the world of Python programming, and I couldn't be more excited! As a student eager to learn and explore the realm of coding, I've chosen Python as my starting point. It's known for its simplicity, readability, and versatility, making it a fantastic language for someone like me who's just beginning this journey.</p>
+                    </div>
+                </div>
+                <br/>
+                
+            </section>
+
+            <section id="Write Ups">
+
+                <h1>Write Ups</h1>
+    
+                <div class="card">
+                    <div class="card-header">Discussion 1 - AI in today's context</div>
+                    <div class="card-content">
+                        <p>
+                            <h1>Discussion:</h1>
+                            Give a real-world use case of AI in today's context.
+                            <h1>Response:</h1>
+
+                            Current use of AI<br/><br/>
+                            AI powered assistance. AI powered assistive technology is used for many kind of services which include AI chatbots for customer service, general purpose like chatGPT and virtual shopping assistance. The AI is used to replace customer services. For example, Amazon customer service will be soon handled by chatbots to speed and help out with the process. This helps to reduce work load and speed up the time needed for consumers to receive help. Another of such use at home as a smart assistant it will help you answer questions that u ask to it some examples of it is Siri and Alexa.<br/><br/>
+                            
+                            These chatbots use natural language processing (NLP) and machine learning algorithms (ML). Natural language processing breaks down human speech into bits to understand what it is given by using processing techniques like Bag-of-words and tokenizations. Then machine learning algorithms then take the information and give the results the person desires. <br/><br/>
+                        
+                            The limitations of such algorithms are inaccurate results. Inaccurate results can include incorrect and biased results, lack of emotions and limited creativity. Due to the AI using machine learning to process a large amount of data from the internet, some results might be outdated, irrelevant or wrong. The AI chatbot can also give results which might be disturbing or insensitive to the user’s feelings and have limited creativity.
+                        </p>
+                    </div>
+                </div>
+                <br/>
+
             </section>
 
             <section id="Projects Done">
 
-            <h2>Projects Done</h2>
+            <h1>Projects Done</h1>
 
             <div class="card">
                 <div class="card-header">Project 1 - Miner-haven</div>
-                <div class="card-content"><p>Write Up</p></div>
-                <div class="card-content"><iframe src="https://replit.com/@his91/Miner-haven?embed=true" width="100%" height="500"></iframe></div>
+                <div class="card-content">
+                    <h1>Description:</h1>
+                    <p>It is a game that is made using words and symbols using python. It is about mining for items in the ground and I try to add a bit of detail by drawing with symbols and numbers. It uses the random library for the item drop rates.</p>
+                    <h1>Code:</h1>
+                    <iframe src="https://replit.com/@his91/Miner-haven?embed=true" width="100%" height="500"></iframe>
+                </div>
             </div>
             <br/>
 
             <div class="card">
                 <div class="card-header">Project 2 - Dice Stats</div>
-                <div class="card-content"><p>Write Up</p></div>
-                <div class="card-content"><iframe src="https://replit.com/@his91/DiceStats?embed=true" width="100%" height="500"></iframe></div>
+                <div class="card-content">
+                    <h1>Description:</h1>
+                    <p>This is written using the random library, this code allows you to either roll 1 or 2 dice a hundred times and take the give the results it also shows the number which is rolled the most, the min number, the mean and the median.</p>
+                    <h1>Code:</h1>
+                    <iframe src="https://replit.com/@his91/DiceStats?embed=true" width="100%" height="500"></iframe>
+                </div>
             </div>
             <br/>
 
             <div class="card">
                 <div class="card-header">Project 3 - TicTacToe</div>
-                <div class="card-content"><p>Write Up</p></div>
-                <div class="card-content"><iframe src="https://replit.com/@his91/tic-tac-toe?embed=true" width="100%" height="500"></iframe></div>
+                <div class="card-content">
+                    <h1>Description:</h1>
+                    <p>This game has a single player and a multiplayer, for the single player the player is playing against a bot which randomly picks a space on the tic tac toe board that is not taken up. Meanwhile the multiplayer one is just a pass and play.</p>
+                    <h1>Code:</h1>
+                    <iframe src="https://replit.com/@his91/tic-tac-toe?embed=true" width="100%" height="500"></iframe>
+                </div>
             </div>
             <br/>
 
             <div class="card">
                 <div class="card-header">
-                    Project 4
-                </div>
-                <div class="card-content">Commentary / Analysis: We used string slicing and the datetime library to convert strings containing dates into datetime variables. Then combined 2 data sets temperature and rainfall into a single dataframe.</div>
-                <div class="card-content">
-                    <pre> <code>
-df = df.rename(columns={'month': 'rawdate'})
-datetext = df['rawdate']
-date = []
-year = []
-month = []
-
-# Converting dates in string format to datetime format and seperating out month and year data  using string slicing and loops
-for i in datetext:
-    date.append(datetime.datetime(int(i[0:4]),int(i[5:7]),calendar.monthrange(int(i[0:4]), int(i[5:7]))[1]))
-    year.append(int(i[0:4]))
-    month.append(int(i[5:7]))
-
-# Inserting datetime, month and year columns back into the pandas dataframe
-df.insert(0,'month',month)
-df.insert(0,'year',year)
-df.insert(0,'date',date)
-
-# Converting temperature from string to numeric data type
-df['mean_temp'] = pd.to_numeric(df['mean_temp'])
-
-# adding the rainfall data into the pandas dataframe
-dfrain = dfrain.rename(columns={'month': 'rawdate'})
-df.insert(3,'rain',dfrain['total_rainfall'])
-
-# Converting rainfall data from string to numeric data type
-df['rain'] = pd.to_numeric(df['rain'])
-                             </code></pre>
+                    Project 4 - "Team Performance Analysis Dashboard"
                 </div>
                 <div class="card-content">
-                    <p>Image</p>
+                    <h1>Description:</h1>
+                    <p>Mock Practice to show to visualise hours played between players in different teams</p>
+                    <div class="center-wrapper"><img src="https://github.com/tlcDataScience/tlcDataScience.github.io/blob/main/dataset/Team-Performance-Analysis-Dashboard/Team%20Performance%20Analysis%20Dashboard.png?raw=true"></div>
+                    <h1>Code:</h1>
+            
+                    <pre>
+<code>
+# Importing necessary libraries
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+
+# Defining data for player stream A and B
+playerstreamA = [
+    {'name':'player1a','hours':15},
+    {'name':'player2a','hours':45},
+    {'name':'player3a','hours':32}
+]
+
+playerstreamB = [
+    {'name':'player1b','hours':115},
+    {'name':'player2b','hours':145},
+    {'name':'player3b','hours':132}
+]
+
+# Creating DataFrames for player streams A and B using pandas
+df_playerstreamA = pd.DataFrame(playerstreamA)
+df_playerstreamB = pd.DataFrame(playerstreamB)
+
+# Displaying the DataFrames
+df_playerstreamA
+df_playerstreamB
+
+# Creating an array of evenly spaced values for the x-axis based on the length of player stream A
+x = np.arange(len(df_playerstreamA))
+
+# Creating a subplot with one plot (fig1) and one set of axes (ax1)
+fig1, ax1 = plt.subplots(1, 1)
+
+# Creating bar plots for player streams A and B on the same axes
+# Bars for team A are positioned slightly to the left (shifted by -0.2) and have a width of 0.4
+ax1.bar(x - 0.2, df_playerstreamA.hours, width=0.4, align='edge', label='TeamA')
+
+# Bars for team B are positioned slightly to the right (shifted by 0.2) and have a width of 0.2
+ax1.bar(x + 0.2, df_playerstreamB.hours, width=0.2, align='edge', label='teamB')
+
+# Adding labels and title to the plot
+ax1.set_xlabel('X-axis')
+ax1.set_ylabel('Y-axis')
+ax1.set_title('Random Sample')
+
+# Setting x-axis ticks with player names
+plt.xticks(x, df_playerstreamA.name)
+
+# Adding a legend to the plot
+plt.legend()
+
+# Displaying the plot
+plt.show()</code>
+                    </pre>
+                    <h1>Commentary / Analysis:</h1>
+                    <p>Code uses Matplotlib to create a bar plot comparing the hours played by players in two different teams (A and B). The x-axis represents the players, the y-axis represents the hours played, and there are two sets of bars for each player, one for each team. The legend distinguishes between the two teams.</p>
+            </div>
+        </div>
+
+            <br/>
+            <div class="card">
+                <div class="card-header">
+                    Project 5 - Understanding effects of Covid on Retrechments
                 </div>
                 <div class="card-content">
-                    <p>Dataset</p>
+                    <h1>Description:</h1>
+                    <p>The objective of the code is to visually compare the retrenchment numbers in the 'services' industry between the years 2019 (pre-COVID) and 2020 (during COVID). This is done by creating a bar plot that displays retrenchment data for both years side by side.</p>
+                    <p>
+                        The visual comparison of the bar plot allows for a quick assessment of retrenchment numbers in the 'services' industry between the years 2019 and 2020.<br/>
+                        Differences in bar heights provide insights into the impact of the COVID-19 pandemic on retrenchment in this specific industry.
+                    </p>
+                    <div class="center-wrapper"><img src="https://github.com/His921/His921.github.io/blob/main/Retrenchment%20By%20Broad%20Occupational/Project-1-DS.png?raw=true" alt="Description of the image"></div>
+                    <h1>Code:</h1>
+                    <pre>
+<code>
+# Import necessary libraries
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load your dataframe (assuming df is already defined)
+
+# Filter data for the year 2019 and industry 'services'
+df_2019 = df[(df['year'] == 2019)]
+df_2019_s = df_2019[(df_2019['industry1'] == 'services')]
+
+# Filter data for the year 2020 and industry 'services'
+df_2020 = df[(df['year'] == 2020)]
+df_2020_s = df_2020[(df_2020['industry1'] == 'services')]
+
+# Remove duplicate rows for the year 2019
+df_2019 = df_2019.drop_duplicates()
+
+# Create a bar plot for retrenchment comparison between 2019 and 2020 for the 'services' industry
+fig1, ax1 = plt.subplots(1, 1, figsize=(15, 5))
+ax1.bar(df_2019_s['industry2'], df_2019_s['retrench'], align='edge', width=-0.2, label='2019')
+ax1.bar(df_2020_s['industry2'], df_2020_s['retrench'], align='edge', width=0.2, label='2020')
+
+# Labeling the plot
+ax1.set_xlabel('Industry')
+ax1.set_ylabel('Retrenchment')
+
+# Rotate x-axis labels to prevent overlap
+plt.setp(ax1.get_xticklabels(), rotation=30)
+
+# Set additional labels and title
+ax1.set_xlabel('Industry')
+ax1.set_ylabel('Retrenchment')
+ax1.set_title('2019 VS 2020')
+
+# Display legend to differentiate between 2019 and 2020 bars
+ax1.legend()
+
+# Show the plot
+plt.show()</code>
+                    </pre>
+                <a href="https://raw.githubusercontent.com/His921/His921.github.io/main/Retrenchment%20By%20Broad%20Occupational/RetrenchmentByIndustrylevel2.csv">Retrenchment By Broad Occupational Dataset</a>
+                <h1>Analysis:</h1>
+
+                    <ol>
+                        <li><strong>Data Loading and Filtering:</strong> The code begins by importing necessary libraries and assumes that a dataframe `df` is already defined. It filters the data for the years 2019 and 2020 and specifically for the 'services' industry.</li><br/>
+                
+                        <li><strong>Duplicate Removal:</strong> Duplicate rows for the year 2019 are removed. This ensures that each data point is unique and contributes to a fair comparison.</li><br/>
+                
+                        <li><strong>Plotting:</strong> The code creates a bar plot using Matplotlib with two sets of bars, one for 2019 and another for 2020, representing retrenchment numbers in the 'services' industry. The bars are aligned at the edge of the x-axis ticks, and different widths are used to separate them visually.</li><br/>
+                
+                        <li><strong>Labeling and Formatting:</strong> x-axis labels are rotated by 30 degrees to prevent overlap and improve readability. Axes labels are set for both x and y axes, providing context to the reader. The plot is given a title, '2019 VS 2020', to clearly convey the purpose of the visualization.</li><br/>
+                
+                        <li><strong>Legend:</strong> A legend is added to the plot to distinguish between the bars representing 2019 and 2020.</li><br/>
+                
+                        <li><strong>Visualization:</strong> Finally, the plot is displayed using `plt.show()`.</li>
+                    </ol>
                 </div>
             </div>
+
+            <br/>
+            <div class="card">
+                <div class="card-header">
+                    Project {} - {Lesson}
+                </div>
+                <div class="card-content">
+                    <h1>Commentary / Analysis:</h1>
+                    <p>{Description}</p>
+                    <div class="center-wrapper"><img src="" alt="Description of the image"></div>
+                    <h1>Code:</h1>
+                    <pre><code>Write Code Here</code></pre>
+                </div>
+            </div>
+
+            <br/>
+            <div class="card">
+                <div class="card-header">
+                    Project {} - {Lesson}
+                </div>
+                <div class="card-content">
+                    <h1>Commentary / Analysis:</h1>
+                    <p>{Description}</p>
+                    <div class="center-wrapper"><img src="" alt="Description of the image"></div>
+                    <h1>Code:</h1>
+                    <pre><code>Write Code Here</code></pre>
+                </div>
+            </div>
+
+            <br/>
+            <div class="card">
+                <div class="card-header">
+                    Project {} - {Lesson}
+                </div>
+                <div class="card-content">
+                    <h1>Commentary / Analysis:</h1>
+                    <p>{Description}</p>
+                    <div class="center-wrapper"><img src="" alt="Description of the image"></div>
+                    <h1>Code:</h1>
+                    <pre><code>Write Code Here</code></pre>
+                </div>
+            </div>
+
+            <br/>
+            <div class="card">
+                <div class="card-header">Project {} - Pygame</div>
+                <div class="card-content">
+                    <h1>Description:</h1>
+                    <p>Body</p>
+                </div>
+                <div class="card-content">
+                    <h1>Code:</h1>
+                    <iframe src="https://replit.com/@his91/Pygame?embed=true" width="100%" height="500"></iframe>
+                </div>
+            </div>
+            <br/>
 
         </main>
     </body>
